@@ -59,11 +59,12 @@
                     <p class="text-center text-white">
                         Wij hebben geen vaste locatie maar werken met partners. Wij zijn hier elke maand aanwezig zodat je elke maand je progressie kunt zien. Kies hieronder één van onze partners om een afspraak te maken voor een scan.
                     </p>
+                    <div class="row justify-content-start">
                     {{ range site.Data.homepage.partners }}
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-3 mb-3" style="margin-bottom: 10px;">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
-                                <img src="{{ .logo }}" width="200"/>
+                                <img src="{{ .logo }}" width="200" height="125" style="object-fit: contain;"/>
                                 <!--<h4 class="text-uppercase m-0">{{ .naam }}</h4>-->
                                 <hr class="my-4 mx-auto" />
                                 <p>
@@ -74,6 +75,7 @@
                         </div>
                     </div>
                     {{ end }}
+                    </div>
                 </div>
             </div>
         </section>
